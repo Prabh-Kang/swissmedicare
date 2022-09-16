@@ -1,0 +1,23 @@
+.mission-div {
+  height: 500px;
+  color: #e2e2e2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #000000;
+}
+
+.mission-div__image {
+  width: 40%;
+}
+
+.mission-div__description {
+  width: 50%;
+  justify-content: start;
+  padding-right: 40px;
+  font-size: 26px;
+}
+
+.mission-div__description div p {
+  margin: 30px 0px;
+}
