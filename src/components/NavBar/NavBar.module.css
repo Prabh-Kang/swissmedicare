@@ -1,0 +1,27 @@
+nav {
+  height: 3rem;
+  background-color: #F2F2F2;
+  color: #181818;
+  font-family: "Avenir", sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+nav > div {
+  font-size: 1.4rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+nav > div,
+nav ul li {
+  cursor: pointer;
+}
