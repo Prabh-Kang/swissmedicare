@@ -11,18 +11,21 @@ $smallFontSize: 16px;
 
 @mixin flex-space-between {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
 @mixin flex-space-around {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
 
 @mixin flex-space-center {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
