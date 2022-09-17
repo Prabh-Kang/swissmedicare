@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: $mediumScreenSize) {
   .mission {
     flex-direction: column;
     padding-top: $largeSpacing;

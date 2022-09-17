@@ -25,3 +25,12 @@ nav {
     }
   }
 }
+
+@media (max-width: $mediumScreenSize) {
+  nav {
+    justify-content: center;
+    ul {
+      display: none;
+    }
+  }
+}
