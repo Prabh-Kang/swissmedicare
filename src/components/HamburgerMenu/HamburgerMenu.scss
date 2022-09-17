@@ -1,0 +1,38 @@
+@import '../../../variables';
+
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $navHeight;
+  margin-left: $smallSpacing;
+  display: none;
+
+  .hamburger-icon {
+    .hamburger-bar {
+      width: $hamburgerIconWidth;
+      height: $hamburgerIconHeight;
+      background-color: $black;
+      margin: $xSmallSpacing $noSpacing;
+      transition: transform 0.3s ease-in-out;
+
+      &.top.open {
+        transform: translate(0, $hamburgerOpenYTranslation) rotate(-45deg);
+      }
+
+      &.middle.open {
+        opacity: 0;
+      }
+
+      &.bottom.open {
+        transform: translate(0, -$hamburgerOpenYTranslation) rotate(45deg);
+      }
+    }
+  }
+}
+
+@media (max-width: $mediumScreenSize) {
+  .hamburger-menu {
+    @include flex-space-center;
+  }
+}
