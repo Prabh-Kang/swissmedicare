@@ -1,0 +1,27 @@
+@import '../../../_variables.scss';
+
+nav {
+  height: 80px;
+  background-color: #ffffff;
+  color: #181818;
+  font-weight: bold;
+  padding: 0px 30px;
+  @include flex-space-between;
+
+  & > div {
+    font-size: $largeFontSize;
+    color: $primaryColor;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+    width: 300px;
+    font-size: $smallFontSize;
+    @include flex-space-between;
+
+    li {
+      cursor: pointer;
+    }
+  }
+}

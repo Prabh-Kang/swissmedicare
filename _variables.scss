@@ -1,0 +1,33 @@
+$primaryColor: #3120E0;
+$white: #ffffff;
+$black: #000000;
+
+$largeFontSize: 24px;
+$mediumFontSize: 20px;
+$smallFontSize: 16px;
+
+
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-space-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-space-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin homePageGradient {
+  background: linear-gradient(to left, $primaryColor, $white);
+}
+
+

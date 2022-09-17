@@ -1,14 +1,14 @@
-import './HomePage.css';
+import './HomePage.scss';
 
 const HomePage = () => {
   return (
-    <div className="mission-div">
+    <div className="mission">
 
-      <div className='mission-div__image'>
+      <div className='image'>
         <img src="https://bt-wpstatic.freetls.fastly.net/wp-content/blogs.dir/4183/files/2019/01/OurMission2-1024x995.png" width="100%"/>
       </div>
 
-      <div className="mission-div__description">
+      <div className="description">
         <div>
           <p>
             To set new standards of customer care by providing quality drugs for requirements of mankind.
