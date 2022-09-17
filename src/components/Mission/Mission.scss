@@ -41,3 +41,15 @@
     }
   }
 }
+
+@media (max-width: 860px) {
+  .mission {
+    flex-direction: column;
+    padding-top: $largeSpacing;
+
+    .description {
+      width: 100%;
+      padding: $noSpacing $mediumSpacing;
+    }
+  }
+}
