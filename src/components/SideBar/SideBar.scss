@@ -1,0 +1,29 @@
+@import '../../../variables';
+
+.sidebar {
+  display: none;
+
+  &.isOpen {
+    display: block;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: $white;
+    z-index: $zIndexSidebarLayer;
+
+    ul {
+      li {
+        font-weight: bold;
+        height: $sidebarNavLinkHeight;
+        transition: background-color 0.3s ease-in-out;
+        @include flex-space-center;
+        @include cursor-pointer;
+
+        &:hover {
+          background-color: $lightGrey;
+        }
+      }
+    }
+  } 
+}

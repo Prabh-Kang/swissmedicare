@@ -1,3 +1,4 @@
+import NavLinks from '../NavLinks/NavLinks';
 import './NavBar.scss'
 
 const NavBar = () => {
@@ -7,11 +8,7 @@ const NavBar = () => {
         Swiss Medicare Pvt. Ltd.
       </div>
 
-      <ul>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>CONTACT US</li>
-      </ul>
+      <NavLinks />
     </nav>
   )
 }
