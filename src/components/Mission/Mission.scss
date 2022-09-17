@@ -20,7 +20,7 @@
     @include flex-space-center;
 
     &.visible {
-      transform: translateX(0px);
+      @include transition-reset;
     }
   }
 
@@ -33,7 +33,7 @@
     @include transition-transform;
 
     &.visible {
-      transform: translateX(0px);
+      @include transition-reset;
     }
 
     p {
@@ -48,8 +48,13 @@
     background-size: auto;
     padding-top: $largeSpacing;
 
+    .image {
+      @include transition-main-medium-screen;
+    }
+
     .description {
       width: 100%;
+      @include transition-main-medium-screen;
       padding: $noSpacing $mediumSpacing;
     }
   }

@@ -18,6 +18,8 @@ $hamburgerIconWidth: 30px;
 $hamburgerIconHeight: 5px;
 
 $hamburgerOpenYTranslation: 10px;
+$verticalTranslation: 20px;
+$horizontalTranslation: 20px;
 
 $navHeight: 80px;
 
@@ -57,6 +59,22 @@ $zIndexSidebarLayer: 99;
 
 @mixin transition-transform {
   transition: transform 1s ease-in-out;
+}
+
+@mixin transition-main-large-screen-left {
+  transform: translateX(-$horizontalTranslation);
+}
+
+@mixin transition-main-large-screen-right {
+  transform: translateX($horizontalTranslation);
+}
+
+@mixin transition-main-medium-screen {
+  transform: translateY($verticalTranslation);
+}
+
+@mixin transition-reset {
+  transform: translate($noSpacing, $noSpacing);
 }
 
 @mixin cursor-pointer {
