@@ -9,6 +9,8 @@
   display: none;
 
   .hamburger-icon {
+    @include cursor-pointer;
+    
     .hamburger-bar {
       width: $hamburgerIconWidth;
       height: $hamburgerIconHeight;

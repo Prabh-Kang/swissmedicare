@@ -54,4 +54,8 @@ $smallScreenSize: 400px;
   transition: transform 1s ease-in-out;
 }
 
+@mixin cursor-pointer {
+  cursor: pointer;
+}
+
 
