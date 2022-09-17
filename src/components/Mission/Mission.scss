@@ -15,7 +15,7 @@
     box-shadow: 0px 0px 30px $grey;
     font-size: $largeFontSize;
     font-weight: bolder;
-    transition: transform 1s ease-in-out;
+    transform: translateX(-30px);
     @include transition-transform;
     @include flex-space-center;
 
