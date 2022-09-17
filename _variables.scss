@@ -31,4 +31,8 @@ $smallFontSize: 16px;
   background: linear-gradient(to left, $primaryColor, $white);
 }
 
+@mixin transition-transform {
+  transition: transform 1s ease-in-out;
+}
+
 

@@ -1,15 +1,20 @@
-import './HomePage.scss';
+// import IntersectionObserverHOC from '../HOC/withIntersectionObserver';
+import './Mission.scss';
+import classNames from 'classnames';
+import { useInView } from 'react-intersection-observer';
 
-const HomePage = () => {
+const Mission = () => {
+
+  const [ref, inView] = useInView();
+
   return (
-    <div className="mission">
+    <div className="mission" ref={ref}>
 
-      <div className='image'>
+      <div className={classNames("image", {"visible": inView})}>
         OUR MISSION
-        {/* <img src="https://bt-wpstatic.freetls.fastly.net/wp-content/blogs.dir/4183/files/2019/01/OurMission2-1024x995.png" width="100%"/> */}
       </div>
 
-      <div className="description">
+      <div className={classNames("description", {"visible": inView})}>
         <div>
           <p>
             To set new standards of customer care by providing quality drugs for requirements of mankind.
@@ -24,6 +29,6 @@ const HomePage = () => {
       </div>
     </div>
   )
-}
+};
 
-export default HomePage;
+export default Mission;
