@@ -1,29 +1,49 @@
 @import '../../../variables';
 
 .sidebar {
-  display: none;
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: $white;
+  z-index: $zIndexSidebarLayer;
 
   &.isOpen {
-    display: block;
-    position: absolute;
-    top: 80px;
-    width: 100%;
-    height: calc(100vh - 80px);
-    background-color: $white;
-    z-index: $zIndexSidebarLayer;
+    transform: translateX(0px);
+    left: 0px;
 
     ul {
       li {
-        font-weight: bold;
-        height: $sidebarNavLinkHeight;
-        transition: background-color 0.3s ease-in-out;
-        @include flex-space-center;
-        @include cursor-pointer;
-
-        &:hover {
-          background-color: $lightGrey;
-        }
+        transform: translateX(0px);
       }
     }
-  } 
+  }
+
+  ul {
+    li {
+      font-weight: bold;
+      height: $sidebarNavLinkHeight;
+      transform: translateX(-100%);
+      @include flex-space-center;
+      @include cursor-pointer;
+
+      &.first {
+        transition: transform 0.5s ease-in-out;
+      }
+
+      &.second {
+        transition: transform 0.6s ease-in-out;
+      }
+
+      &.third {
+        transition: transform 0.7s ease-in-out;
+      }
+
+      &:hover {
+        background-color: $lightGrey;
+      }
+    }
+  }
 }

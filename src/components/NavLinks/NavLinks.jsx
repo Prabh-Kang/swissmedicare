@@ -1,9 +1,9 @@
 const NavLinks = () => {
   return (
     <ul>
-      <li>HOME</li>
-      <li>ABOUT</li>
-      <li>CONTACT US</li>
+      <li className="first">HOME</li>
+      <li className="second">ABOUT</li>
+      <li className="third">CONTACT US</li>
     </ul>
   )
 }
