@@ -1,7 +1,7 @@
 @import '../../../_variables.scss';
 
 nav {
-  height: 80px;
+  height: $navHeight;
   background-color: #ffffff;
   color: #181818;
   font-weight: bold;
@@ -30,6 +30,14 @@ nav {
   nav {
     justify-content: center;
     ul {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $smallScreenSize) {
+  nav {
+    & > div {
       display: none;
     }
   }
