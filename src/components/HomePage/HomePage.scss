@@ -1,13 +1,20 @@
 @import '../../../variables';
 .mission {
   height: 500px;
-  color: $white;
+  color: $black;
   @include flex-space-around;
-  @include homePageGradient;
+  background-image: url("https://i.pinimg.com/originals/77/22/8e/77228ed9700c8450a320345971be5a73.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .image {
-    width: 40%;
-    max-width: 350px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px $grey;
+    font-size: $largeFontSize;
+    font-weight: bolder;
+    @include flex-space-center;
   }
 
   .description {

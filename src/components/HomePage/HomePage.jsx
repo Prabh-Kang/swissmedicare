@@ -5,7 +5,8 @@ const HomePage = () => {
     <div className="mission">
 
       <div className='image'>
-        <img src="https://bt-wpstatic.freetls.fastly.net/wp-content/blogs.dir/4183/files/2019/01/OurMission2-1024x995.png" width="100%"/>
+        OUR MISSION
+        {/* <img src="https://bt-wpstatic.freetls.fastly.net/wp-content/blogs.dir/4183/files/2019/01/OurMission2-1024x995.png" width="100%"/> */}
       </div>
 
       <div className="description">
