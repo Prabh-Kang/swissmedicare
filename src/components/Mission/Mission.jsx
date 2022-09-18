@@ -11,11 +11,16 @@ const Mission = () => {
     <div className="mission" ref={ref}>
 
       <div className={classNames("image", {"visible": inView})}>
-        OUR MISSION
+        <span class="material-symbols-outlined">
+          rocket_launch
+        </span>
       </div>
 
       <div className={classNames("description", {"visible": inView})}>
         <div>
+          <h2>
+            OUR MISSION
+          </h2>
           <p>
             To set new standards of customer care by providing quality drugs for requirements of mankind.
           </p>

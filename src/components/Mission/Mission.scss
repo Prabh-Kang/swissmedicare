@@ -3,18 +3,13 @@
 .mission {
   min-height: 500px;
   color: $black;
-  background-image: url("../../../assets/HomePageImages/mission-background-min.png");
+  padding: $largeSpacing;
+  // background-image: url("../../../assets/HomePageImages/mission-background-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   @include flex-space-around;
 
   .image {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 30px $grey;
-    font-size: $largeFontSize;
-    font-weight: bolder;
     transform: translateX(-30px);
     @include transition-transform;
     @include flex-space-center;
@@ -22,15 +17,21 @@
     &.visible {
       @include transition-reset;
     }
+
+    span {
+      font-size: $homepageIconsFontSize;
+    }
   }
 
   .description {
-    width: 50%;
+    width: 60%;
     justify-content: start;
-    padding-right: 40px;
+    border-radius: $largeSpacing;
+    padding: 40px;
     font-size: 26px;
     transform: translateX(30px);
     @include transition-transform;
+    @include card-shadow;
 
     &.visible {
       @include transition-reset;
@@ -38,6 +39,11 @@
 
     p {
       margin: 30px 0px;
+    }
+
+    h2 {
+      color: $primaryColor;
+      @include text-center;
     }
   }
 }
@@ -55,7 +61,6 @@
     .description {
       width: 100%;
       @include transition-main-medium-screen;
-      padding: $noSpacing $mediumSpacing;
     }
   }
 }

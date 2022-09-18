@@ -9,7 +9,7 @@ nav {
   @include flex-space-between;
 
   & > div {
-    font-size: $largeFontSize;
+    font-size: $navCompanyNameFontSize;
     color: $primaryColor;
     @include cursor-pointer;
   }

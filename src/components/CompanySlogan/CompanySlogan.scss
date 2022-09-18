@@ -1,0 +1,41 @@
+@import '../../../variables';
+
+.company-slogan {
+  height: 500px;
+  font-size: $companySloganFontSize;
+  font-weight: bolder;
+  padding: $noSpacing $largeSpacing;
+  @include text-center;
+  @include flex-space-center;
+
+  p {
+    position: relative;
+    padding: $largeSpacing;
+
+    &::before,
+    &::after {
+      position: absolute;
+      width: $largeSpacing;
+      height: $largeSpacing;
+      content: "";
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+      border-left: $smallSpacing solid black;
+      border-top: $smallSpacing solid black;
+    }
+
+    &::after {
+      right: 0;
+      bottom: 0;
+      border-right: $smallSpacing solid black;
+      border-bottom: $smallSpacing solid black;
+    }
+
+    span {
+      color: $secondaryColor;
+    }
+  }
+}

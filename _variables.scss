@@ -1,9 +1,13 @@
 $primaryColor: #3120E0;
+$secondaryColor: #FF8200;
 $white: #FFFFFF;
 $black: #000000;
 $grey: grey;
 $lightGrey: #EDEDED;
 
+$homepageIconsFontSize: 150px;
+$companySloganFontSize: 60px;
+$navCompanyNameFontSize: 26px;
 $largeFontSize: 24px;
 $mediumFontSize: 20px;
 $smallFontSize: 16px;
@@ -61,6 +65,18 @@ $zIndexSidebarLayer: 99;
   transition: transform 1s ease-in-out;
 }
 
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin text-right {
+  text-align: end;
+}
+
+@mixin text-left {
+  text-align: start;
+}
+
 @mixin transition-main-large-screen-left {
   transform: translateX(-$horizontalTranslation);
 }
@@ -79,6 +95,10 @@ $zIndexSidebarLayer: 99;
 
 @mixin cursor-pointer {
   cursor: pointer;
+}
+
+@mixin card-shadow {
+  box-shadow: 0px 0px $mediumSpacing $grey;
 }
 
 
