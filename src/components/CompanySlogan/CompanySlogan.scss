@@ -3,6 +3,7 @@
 .company-slogan {
   min-height: $companySloganDivHeight;
   font-size: $companySloganFontSize;
+  margin: $largeSpacing $noSpacing;
   font-weight: bolder;
   @include text-center;
   @include flex-space-center;
