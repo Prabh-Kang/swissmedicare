@@ -3,15 +3,11 @@ import Card from '../Card/Card';
 
 const Profile = () => {
   const missionItems = [
-    "Provide quality drugs",
-    "Maintain high standards of Business",
-    "Make the environment trouble free"
+    "Provide quality drugs by maintaining high standards of business and keep the environment trouble free"
   ]
 
   const visionItems = [
-    "Become market leader",
-    "Symbolize quality services",
-    "Expand operations globally"
+    "Become market leader by symbolizing quality services and expand operations globally"
   ]
   return (
     <div className="profile">
