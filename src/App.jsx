@@ -1,7 +1,7 @@
 import { useState, createContext } from 'react';
 import NavBar from './components/NavBar/NavBar';
 import HomePage from './Pages/HomePage/HomePage';
-import './index.css';
+import './index.scss';
 import HamburgerMenu from './components/HamburgerMenu/HamburgerMenu';
 import SideBar from './components/SideBar/SideBar';
 

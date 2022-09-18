@@ -9,11 +9,13 @@ $homepageIconsFontSize: 150px;
 $companySloganFontSize: 60px;
 $cardIconFontSize: 30px;
 $navCompanyNameFontSize: 26px;
+$xLargeFontSize: 30px;
 $largeFontSize: 24px;
 $mediumFontSize: 20px;
 $smallFontSize: 16px;
 
 $largeSpacing: 40px;
+$mediumLargeSpacing: 30px;
 $mediumSpacing: 20px;
 $smallSpacing: 10px;
 $xSmallSpacing: 5px;
@@ -22,9 +24,9 @@ $noSpacing: 0px;
 $hamburgerIconWidth: 30px;
 $hamburgerIconHeight: 5px;
 
+$companySloganDivHeight: 400px;
+
 $hamburgerOpenYTranslation: 10px;
-$verticalTranslation: 20px;
-$horizontalTranslation: 20px;
 
 $navHeight: 80px;
 
@@ -66,6 +68,14 @@ $zIndexSidebarLayer: 99;
   transition: transform 1s ease-in-out;
 }
 
+@mixin card-transform-vertical {
+  transform: translateY($mediumSpacing);
+}
+
+@mixin transform-reset {
+  transform: translate($noSpacing, $noSpacing);
+}
+
 @mixin text-center {
   text-align: center;
 }
@@ -76,22 +86,6 @@ $zIndexSidebarLayer: 99;
 
 @mixin text-left {
   text-align: start;
-}
-
-@mixin transition-main-large-screen-left {
-  transform: translateX(-$horizontalTranslation);
-}
-
-@mixin transition-main-large-screen-right {
-  transform: translateX($horizontalTranslation);
-}
-
-@mixin transition-main-medium-screen {
-  transform: translateY($verticalTranslation);
-}
-
-@mixin transition-reset {
-  transform: translate($noSpacing, $noSpacing);
 }
 
 @mixin cursor-pointer {

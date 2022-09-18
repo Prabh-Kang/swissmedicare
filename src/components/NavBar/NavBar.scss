@@ -5,7 +5,6 @@ nav {
   background-color: #ffffff;
   color: #181818;
   font-weight: bold;
-  padding: 0px 30px;
   @include flex-space-between;
 
   & > div {

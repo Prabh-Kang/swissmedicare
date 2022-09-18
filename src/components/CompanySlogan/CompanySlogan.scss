@@ -1,10 +1,9 @@
 @import '../../../variables';
 
 .company-slogan {
-  height: 500px;
+  min-height: $companySloganDivHeight;
   font-size: $companySloganFontSize;
   font-weight: bolder;
-  padding: $noSpacing $largeSpacing;
   @include text-center;
   @include flex-space-center;
 

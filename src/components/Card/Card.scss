@@ -1,0 +1,46 @@
+@import '../../../variables';
+
+.card {
+  width: fit-content;
+  padding: $mediumSpacing;
+  border-radius: $mediumLargeSpacing;
+  @include card-shadow;
+  @include transition-transform;
+  @include card-transform-vertical;
+
+  &.visible {
+    @include transform-reset;
+  }
+
+  .header {
+    font-size: $xLargeFontSize;
+    font-weight: bold;
+    margin-bottom: $mediumSpacing;
+    @include text-center;
+
+    span {
+      display: none;
+    }
+  }
+
+  .body {
+    @include flex-space-center;
+
+    .icon {
+      font-size: $homepageIconsFontSize;
+      margin-right: $largeSpacing;
+    }
+
+    .text {
+      height: 100%;
+
+      ul {
+        list-style: none;
+
+        li {
+          font-size: $mediumFontSize;
+        }
+      }
+    }
+  }
+}
