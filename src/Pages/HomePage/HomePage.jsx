@@ -1,12 +1,12 @@
 import CompanySlogan from '../../components/CompanySlogan/CompanySlogan';
-import Mission from '../../components/Mission/Mission';
+import Profile from '../../components/Profile/Profile';
 import './HomePage.scss';
 
 const HomePage = () => {
   return (
     <>
       <CompanySlogan />
-      <Mission />
+      <Profile />
     </>
   )
 }

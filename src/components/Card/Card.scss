@@ -1,9 +1,10 @@
 @import '../../../variables';
 
 .card {
-  width: fit-content;
+  width: 600px;
   padding: $mediumSpacing;
   border-radius: $mediumLargeSpacing;
+  margin: $largeSpacing;
   @include card-shadow;
   @include transition-transform;
   @include card-transform-vertical;
@@ -25,22 +26,39 @@
 
   .body {
     @include flex-space-center;
+    flex-wrap: nowrap;
 
     .icon {
       font-size: $homepageIconsFontSize;
       margin-right: $largeSpacing;
     }
 
-    .text {
-      height: 100%;
+    .text ul {
+      list-style: none;
 
-      ul {
-        list-style: none;
-
-        li {
-          font-size: $mediumFontSize;
-        }
+      li {
+        font-size: $mediumFontSize;
       }
+    }
+  }
+}
+
+@media (max-width: $mediumScreenSize) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .card .body {
+    flex-direction: column;
+
+    .icon {
+      margin-bottom: $smallSpacing;
+    }
+
+    .text ul li {
+      @include text-center;
     }
   }
 }
