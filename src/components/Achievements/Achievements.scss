@@ -1,0 +1,72 @@
+@import '../../../variables';
+
+.achievements {
+  margin: $xxLargeSpacing $largeSpacing;
+  padding: $largeSpacing $xLargeSpacing;
+  padding-right: $mediumSpacing;
+  border-radius: $mediumSpacing;
+  @include card-shadow;
+  @include flex-space-center;
+  @include no-flex-wrap;
+  @include card-transform-vertical;
+  @include transition-transform;
+
+  &.visible {
+    @include transform-reset;
+  }
+
+  .content {
+    margin-right: $largeSpacing;
+    .header {
+      font-size: $xLargeFontSize;
+      font-weight: bolder;
+      color: $primaryColor;
+      margin-bottom: $mediumSpacing;
+    }
+
+    .logo {
+      display: none;
+      @include text-center;
+      span {
+        font-size: $teamCardIconFontSize;
+      }
+    }
+
+    .body {
+      max-width: 800px;
+      font-size: $mediumFontSize;
+    }
+  }
+
+  .logo {
+    img {
+      width: 300px;
+      height: 400px;
+    }
+  }
+
+}
+
+@media (max-width: $mediumScreenSize) {
+  .achievements {
+    .content {
+      .header {
+        @include text-center;
+      }
+      .logo {
+        display: block;
+        margin: $noSpacing auto;
+      }
+    }
+
+    .logo {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .achievements {
+    margin: $largeSpacing $noSpacing;
+  }
+}

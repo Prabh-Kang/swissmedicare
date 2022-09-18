@@ -14,6 +14,8 @@ $largeFontSize: 24px;
 $mediumFontSize: 20px;
 $smallFontSize: 16px;
 
+$xxLargeSpacing: 80px;
+$xLargeSpacing: 60px;
 $largeSpacing: 40px;
 $mediumLargeSpacing: 30px;
 $mediumSpacing: 20px;
@@ -58,6 +60,10 @@ $zIndexSidebarLayer: 99;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+@mixin no-flex-wrap {
+  flex-wrap: nowrap;
 }
 
 @mixin homePageGradient {
