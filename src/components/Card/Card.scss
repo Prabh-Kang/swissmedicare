@@ -17,6 +17,7 @@
     font-size: $xLargeFontSize;
     font-weight: bold;
     margin-bottom: $mediumSpacing;
+    color: $primaryColor;
     @include text-center;
 
     span {

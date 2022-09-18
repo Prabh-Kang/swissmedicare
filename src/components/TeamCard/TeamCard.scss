@@ -1,0 +1,22 @@
+@import '../../../variables';
+
+.teamCard {
+  width: 300px;
+  margin: $mediumSpacing;
+  padding: $mediumSpacing;
+  border: 2px solid $grey;
+  border-radius: 10px;
+  @include flex-space-between;
+  flex-direction: column;
+
+  .icon {
+    span {
+      color: $primaryColor;
+      font-size: $teamCardIconFontSize;
+    }
+  }
+
+  .teamName {
+    font-size: $largeFontSize;
+  }
+}

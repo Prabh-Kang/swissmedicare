@@ -1,0 +1,36 @@
+@import '../../../variables';
+
+.teams {
+  margin: $largeSpacing;
+  padding: $mediumSpacing;
+  border-radius: $mediumSpacing;
+  @include card-shadow;
+  @include card-transform-vertical;
+  @include transition-transform;
+
+  &.visible {
+    @include transform-reset;
+  }
+
+  .header {
+    font-size: $xLargeFontSize;
+    font-weight: bolder;
+    margin-bottom: $mediumSpacing;
+    @include text-center;
+
+    span {
+      padding: $smallSpacing;
+      border-bottom: 1px solid $grey;
+    }
+  }
+
+  .body {
+    @include flex-space-around;
+  }
+}
+
+@media (max-width: 700px) {
+  .teams {
+    margin: $largeSpacing $noSpacing;
+  }
+}
