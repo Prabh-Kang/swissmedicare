@@ -20,6 +20,9 @@ const Mission = () => {
         <div>
           <h2>
             OUR MISSION
+            <span class="material-symbols-outlined">
+              rocket_launch
+            </span>
           </h2>
           <p>
             To set new standards of customer care by providing quality drugs for requirements of mankind.

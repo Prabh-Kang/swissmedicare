@@ -44,6 +44,10 @@
     h2 {
       color: $primaryColor;
       @include text-center;
+
+      span {
+        display: none;
+      }
     }
   }
 }
@@ -55,12 +59,20 @@
     padding-top: $largeSpacing;
 
     .image {
-      @include transition-main-medium-screen;
+      display: none;
     }
 
     .description {
       width: 100%;
       @include transition-main-medium-screen;
+
+      h2 {
+        span {
+          display: inline-block;
+          font-size: $cardIconFontSize;
+          margin-left: $mediumSpacing;
+        }
+      }
     }
   }
 }
