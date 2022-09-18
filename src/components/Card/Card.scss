@@ -50,15 +50,18 @@
 }
 
 @media (max-width: 700px) {
-  .card .body {
-    flex-direction: column;
-
-    .icon {
-      margin-bottom: $smallSpacing;
-    }
-
-    .text ul li {
-      @include text-center;
+  .card {
+    margin: $largeSpacing $noSpacing;
+    .body {
+      flex-direction: column;
+  
+      .icon {
+        margin-bottom: $smallSpacing;
+      }
+  
+      .text ul li {
+        @include text-center;
+      }
     }
   }
 }

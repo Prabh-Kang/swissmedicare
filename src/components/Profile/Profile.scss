@@ -1,5 +1,6 @@
 @import '../../../variables';
 
 .profile {
+  margin-top: $mediumSpacing;
   @include flex-space-around;
 }
