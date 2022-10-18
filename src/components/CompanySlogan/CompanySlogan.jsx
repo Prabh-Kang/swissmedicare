@@ -3,7 +3,8 @@ import './CompanySlogan.scss';
 const CompanySlogan = () => {
   return (
     <div className="company-slogan">
-      <p>Leadership Through <br /> <span>Quality</span> &#38; <span>Excellence</span></p>
+      <p>Quality.<br />Excellence. <br /><span>Humanizing</span> <br /><span>Pharmaceuticals.</span></p>
+      <img src='../../../assets/HomePageImages/medicines.jpeg' />
     </div>
   )
 }
